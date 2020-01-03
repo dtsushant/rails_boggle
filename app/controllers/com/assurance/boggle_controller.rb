@@ -42,16 +42,17 @@ class Com::Assurance::BoggleController < ApplicationController
 =end
 
 
-    # will need to create custom dictionary, for now randomly validating word
-    rand1 = rand(2)
-    score =0
-    print "the rand no is #{rand1}"
 
-    if(rand1==1)
+
+    wordfound = 'false'
+    score = 0
+    if word
+      wordfound = 'true'
       b = BoggleUtils.new
       score = b.wordScore(params[:currentWord])
     end
-    render json: { value: rand1==0?'false' : 'true', word: params[:currentWord], score: score}
+
+    render json: { value: wordfound, word: params[:currentWord], score: score}
   end
 
   def test
@@ -63,8 +64,13 @@ class Com::Assurance::BoggleController < ApplicationController
   end
 
   private
+
   def switch_layout
     @_action_name != 'test' || @_action_name != 'something'?'layout_boggle':'layout_redux_test'
+  end
+
+  def word
+    @word ||= Word.find_by_word(params[:currentWord])
   end
 
 end

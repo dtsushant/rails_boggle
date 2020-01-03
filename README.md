@@ -1,25 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I was unable to find a free Word validation API without Credit Card Registry so I've used DB based dictionary to validate the word
 
-Things you may want to cover:
+The word list has been copied from a github contributor https://github.com/dwyl/english-words/blob/master/words.txt
 
-* Ruby version
+Tutorial followed to learn react and rails https://www.digitalocean.com/community/tutorials/how-to-set-up-a-ruby-on-rails-project-with-a-react-frontend
 
-* System dependencies
+I am using mysql as native database so please be sure to have a mysql installation 
 
-* Configuration
+please set the proper db user / password in database.yml file inside config
 
-* Database creation
+After setting database please run rails db:migrate 
 
-* Database initialization
+After running the db:migrate please run rails:seed
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+Deploy the application 
 
 * ...
 # rails_boggle
