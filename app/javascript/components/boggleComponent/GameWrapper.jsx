@@ -33,6 +33,7 @@ class GameWrapper extends Component{
         }
     }
 
+    //TODO:- Being lazy here modify this to change the state through dispatch if I later get time
     resetGame(){
         window.location.reload();
     }
