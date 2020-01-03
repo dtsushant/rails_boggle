@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assurance Boggle</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+
+
+
+</head>
+<body>
+
+  <div>
+      <div class="vw-100 vh-100 primary-color d-flex align-items-center justify-content-center">
+        <div class="jumbotron jumbotron-fluid bg-transparent" id="root">
+          <%= yield %>
+        </div>
+      </div>
+
+  </div>
+
+
+  <%= javascript_pack_tag 'Boggle' %>
+</body>
+</html>

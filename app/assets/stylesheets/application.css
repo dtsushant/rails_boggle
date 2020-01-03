@@ -1,0 +1,200 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.bg_primary-color {
+    background-color: #FFFFFF;
+}
+.primary-color {
+    background-color: #FFFFFF;
+}
+.bg_secondary-color {
+    background-color: #293241;
+}
+.secondary-color {
+    color: #293241;
+}
+.custom-button.btn {
+    background-color: #293241;
+    color: #FFF;
+    border: none;
+}
+.custom-button.btn:hover {
+    color: #FFF !important;
+    border: none;
+}
+.hero {
+    width: 100vw;
+    height: 50vh;
+}
+.hero img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+
+
+.boggleBoard {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    width: 500px;
+    margin: auto;
+}
+
+.controlPanel {
+    border: 1px solid #550400;
+    border-right: none;
+    width: 50%;
+    padding: 5px;
+}
+.ctrBtn {
+    height: 40px;
+    width: 100px;
+    background-color: #D4706A;
+    border-radius: 5px;
+    color: #550400;
+    border: 1px solid #550400;
+    font-size: 15px;
+    margin: 5px auto;
+}
+.ctrBtn:hover {
+    background-color: #FFAEAA;
+}
+.wordBox {
+    overflow-y: scroll;
+    height: 240px;
+    /* min-height: 300px; */
+    border: 1px solid #550400;
+    border-radius: 5px;
+    width: 100%;
+}
+.newGameBtns {
+    display: flex;
+    justify-content: space-evenly;
+}
+.submitWord {
+    display: flex;
+}
+/* input {
+    background-color: #D4706A;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+} */
+.timer {
+    height: 40px;
+    width: 100px;
+    background-color: #D4706A;
+    border-radius: 5px;
+    color: #550400;
+    border: 1px solid #550400;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    float:left;
+    clear: both;
+    display: inline;
+
+}
+.total {
+    height: 30px;
+    width: 150px;
+    background-color: #D4706A;
+    border-radius: 5px;
+    color: #550400;
+    border: 1px solid #550400;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    margin: 5px auto;
+}
+
+.ltrBtn {
+    height: 50px;
+    width:  50px;
+    background-color: #D4706A;
+    border-radius: 5px;
+    color: #550400;
+    border: 1px solod #550400;
+    font-size: 20px;
+}
+.ltrBtn:hover {
+    background-color: lavender;
+}
+.letterBoard {
+    width: 218px;
+    margin: auto;
+    background-color: #FFAEAA;
+    border: 1px solid #550400;
+    border-radius: 5px;
+    float: left;
+}
+table {
+    margin: auto;
+}
+.nextAllowed{
+    background-color: gray;
+}
+.activeLetter {
+    background-color: lavender;
+}
+.timer, .letterBoard  {
+    margin: 5px auto;
+}
+.letterBoardPanel {
+    border: 1px solid #550400;
+    border-left: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+input {
+    background-color: #D4706A;
+    /* height: 40px; */
+    border: 1px solid #550400;
+    border-radius: 5px;
+    padding: 5px;
+}
+.currentWordFormed {
+    /* margin: auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.clearBtn {
+    background-color: #D4706A;
+    width: 40px;
+    border: 1px solid #550400;
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+}
+.scoreCard{
+    width: 200px;
+    height: 142px;
+    border: 1px solid #550400;
+    clear: both;
+    background: #999623;
+    overflow: scroll;
+}
