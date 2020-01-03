@@ -18,7 +18,7 @@ Rails.application.routes.draw do
     end
   end
 
-  root controller:'boggle', action:'index'
+  root controller:'com/assurance/boggle', action:'index'
   get '/boggle/test' => 'com/assurance/boggle#test'
   get '/boggle' => 'com/assurance/boggle#index'
   get '/boggle/play' => 'com/assurance/boggle#play'
